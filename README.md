@@ -57,7 +57,7 @@ ADY mới nhất/
 │
 ├── ⚙️ manage.py                                (File chạy lệnh chuẩn của Django)
 ├── 🚀 start_server.bat                         (File click đúp chuột chạy Server Django trên Windows)
-├── 📜 export_models.py                         (Script kiểm tra tệp mô hình AI)
+├── 📜 requirements.txt                         (Khai báo thư viện chuẩn)
 │
 ├── 📂 Documents/                               <-- 4 BÁO CÁO WORD & 3 PDF NOTEBOOK NỘP BÀI
 │   ├── 📄 01. Business Understanding.docx
