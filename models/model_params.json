@@ -1,0 +1,168 @@
+{
+  "scaler": {
+    "age": {
+      "scale": 0.014492753623188406,
+      "min": -0.2608695652173913,
+      "data_min": 18.0,
+      "data_max": 87.0
+    },
+    "alcohol_consumption_per_week": {
+      "scale": 0.16666666666666666,
+      "min": 0.0,
+      "data_min": 0.0,
+      "data_max": 6.0
+    },
+    "physical_activity_minutes_per_week": {
+      "scale": 0.0025906735751295338,
+      "min": -0.02072538860103627,
+      "data_min": 8.0,
+      "data_max": 394.0
+    },
+    "diet_score": {
+      "scale": 0.12195121951219513,
+      "min": -0.21951219512195125,
+      "data_min": 1.8,
+      "data_max": 10.0
+    },
+    "sleep_hours_per_day": {
+      "scale": 0.2,
+      "min": -0.9,
+      "data_min": 4.5,
+      "data_max": 9.5
+    },
+    "screen_time_hours_per_day": {
+      "scale": 0.08849557522123894,
+      "min": -0.04424778761061947,
+      "data_min": 0.5,
+      "data_max": 11.8
+    },
+    "bmi": {
+      "scale": 0.059880239520958084,
+      "min": -1.035928143712575,
+      "data_min": 17.3,
+      "data_max": 34.0
+    },
+    "waist_to_hip_ratio": {
+      "scale": 4.545454545454546,
+      "min": -3.409090909090909,
+      "data_min": 0.75,
+      "data_max": 0.97
+    },
+    "systolic_bp": {
+      "scale": 0.016666666666666666,
+      "min": -1.5,
+      "data_min": 90.0,
+      "data_max": 150.0
+    },
+    "diastolic_bp": {
+      "scale": 0.02631578947368421,
+      "min": -1.4736842105263157,
+      "data_min": 56.0,
+      "data_max": 94.0
+    },
+    "heart_rate": {
+      "scale": 0.02564102564102564,
+      "min": -1.282051282051282,
+      "data_min": 50.0,
+      "data_max": 89.0
+    },
+    "cholesterol_total": {
+      "scale": 0.006666666666666667,
+      "min": -0.7400000000000001,
+      "data_min": 111.0,
+      "data_max": 261.0
+    },
+    "hdl_cholesterol": {
+      "scale": 0.020833333333333332,
+      "min": -0.625,
+      "data_min": 30.0,
+      "data_max": 78.0
+    },
+    "triglycerides": {
+      "scale": 0.005154639175257732,
+      "min": -0.15463917525773196,
+      "data_min": 30.0,
+      "data_max": 224.0
+    },
+    "insulin_level": {
+      "scale": 0.05141388174807198,
+      "min": -0.10282776349614396,
+      "data_min": 2.0,
+      "data_max": 21.45
+    },
+    "hba1c": {
+      "scale": 0.26455026455026454,
+      "min": -1.2275132275132274,
+      "data_min": 4.64,
+      "data_max": 8.42
+    }
+  },
+  "full_model": {
+    "intercept": 87.02680241623888,
+    "coef": {
+      "age": 7.956768849294066,
+      "alcohol_consumption_per_week": 0.011288563333212487,
+      "physical_activity_minutes_per_week": -5.665112236953077,
+      "diet_score": -1.7054192285738818,
+      "sleep_hours_per_day": -0.021596925613751938,
+      "screen_time_hours_per_day": 1.3228252017568833,
+      "family_history_diabetes": 6.4720688697156525,
+      "hypertension_history": 0.09102123307404252,
+      "cardiovascular_history": -0.13857473661898215,
+      "bmi": 2.4989674027722413,
+      "waist_to_hip_ratio": 0.002635951932694249,
+      "systolic_bp": -0.2604561138124543,
+      "diastolic_bp": 0.04513144721302684,
+      "heart_rate": 0.2770489243313089,
+      "cholesterol_total": -0.06598088311957782,
+      "hdl_cholesterol": -1.8752898342594155,
+      "triglycerides": 0.9639803813336089,
+      "insulin_level": 1.3300443490863152,
+      "hba1c": 39.273446639693056,
+      "gender_Male": -0.09957993913147085,
+      "gender_Other": -0.2808667187264787,
+      "ethnicity_Black": -0.009109442206994998,
+      "ethnicity_Hispanic": 0.029710219058911934,
+      "ethnicity_Other": 0.1801411649750551,
+      "ethnicity_White": -0.05658212785555159,
+      "education_level_Highschool": -0.08533030939059964,
+      "education_level_No formal": 0.0005364140683159933,
+      "education_level_Postgraduate": 0.08095897491239451,
+      "income_level_Low": 0.02300063037169858,
+      "income_level_Lower-Middle": 0.1887096265288525,
+      "income_level_Middle": 0.019880945557864085,
+      "income_level_Upper-Middle": -4.125315550856067e-05,
+      "employment_status_Retired": -0.03526819883277994,
+      "employment_status_Student": -0.03139767709214001,
+      "employment_status_Unemployed": -0.08983442983619157,
+      "smoking_status_Former": 0.14205853667779705,
+      "smoking_status_Never": 0.0823885584141661
+    }
+  },
+  "reduced_model": {
+    "intercept": 87.0690567345357,
+    "coef": {
+      "age": 7.8031187121059835,
+      "physical_activity_minutes_per_week": -5.672872114308667,
+      "diet_score": -1.7069005916996818,
+      "screen_time_hours_per_day": 1.3227258774653112,
+      "family_history_diabetes": 6.472179368408699,
+      "hypertension_history": 0.09164702907552079,
+      "cardiovascular_history": -0.13993313351513176,
+      "bmi": 2.442755952213424,
+      "heart_rate": 0.2531529414594161,
+      "hdl_cholesterol": -1.8600236535168635,
+      "triglycerides": 0.9641595151873824,
+      "insulin_level": 1.3307534788706468,
+      "hba1c": 39.27111920543882,
+      "gender_Male": -0.0884366008462274,
+      "ethnicity_Other": 0.17374203995978893,
+      "ethnicity_White": -0.06552946467888553,
+      "education_level_Highschool": -0.08523248649041813,
+      "education_level_Postgraduate": 0.08233359099374483,
+      "income_level_Lower-Middle": 0.17508633918843122,
+      "employment_status_Unemployed": -0.07891229353998307,
+      "smoking_status_Former": 0.07999515574762378
+    }
+  }
+}
