@@ -385,11 +385,11 @@
             <h2>AI Model Specifications</h2>
             <div class="metric-item">
                 <span class="metric-label">🖥️ Desktop Model (OLS):</span>
-                <span class="metric-value">37 features</span>
+                <span class="metric-value">26 vars (38 features)</span>
             </div>
             <div class="metric-item">
                 <span class="metric-label">📱 Mobile Model (Lasso):</span>
-                <span class="metric-value">20 features</span>
+                <span class="metric-value">17 vars (20 features)</span>
             </div>
             <div class="metric-item">
                 <span class="metric-label">Diagnostic Specificity:</span>
@@ -407,8 +407,8 @@
 
         <div class="sidebar-footer">
             <b>100% Automatic Routing:</b><br>
-            • Mobile: Reduced Model (20 features)<br>
-            • Desktop: Full Model (37 features)
+            • Mobile: Reduced Model (17 variables / 20 features)<br>
+            • Desktop: Full Model (26 variables / 38 features)
         </div>
     </div>
 
@@ -681,14 +681,14 @@
             const desktopFields = document.querySelectorAll('.desktop-only-field');
             
             if (isMobile) {
-                badge.innerHTML = '<span>📱</span> <div><b>100% Automatic:</b> Mobile Device Detected — <b>Reduced Model (20 features)</b></div>';
+                badge.innerHTML = '<span>📱</span> <div><b>100% Automatic:</b> Mobile Device Detected — <b>Reduced Model (17 variables / 20 features)</b></div>';
                 badge.style.backgroundColor = '#f0fdf4';
                 badge.style.color = '#166534';
                 badge.style.borderColor = '#bbf7d0';
                 
                 desktopFields.forEach(el => el.style.display = 'none');
             } else {
-                badge.innerHTML = '<span>💻</span> <div><b>100% Automatic:</b> Desktop Device Detected — <b>Full Model (37 features)</b></div>';
+                badge.innerHTML = '<span>💻</span> <div><b>100% Automatic:</b> Desktop Device Detected — <b>Full Model (26 variables / 38 features)</b></div>';
                 badge.style.backgroundColor = '#eff6ff';
                 badge.style.color = '#1e40af';
                 badge.style.borderColor = '#bfdbfe';
