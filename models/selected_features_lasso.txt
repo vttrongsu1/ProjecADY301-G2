@@ -12,9 +12,10 @@ triglycerides
 insulin_level
 hba1c
 gender_Male
-gender_Other
 ethnicity_Other
 ethnicity_White
 education_level_Highschool
 education_level_Postgraduate
 income_level_Lower-Middle
+employment_status_Unemployed
+smoking_status_Former
