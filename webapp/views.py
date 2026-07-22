@@ -132,17 +132,19 @@ def predict(request):
 
         if is_mobile and model_reduced is not None:
             active_model = model_reduced
-            model_type_str = "Mobile (Reduced Model - 20 features)"
+            model_type_str = "Mobile (Reduced Model)"
             model_code = "reduced"
             r2_val = "54.81%"
             features_cnt = 20
+            orig_features_cnt = 17
             device_str = "Mobile Device"
         else:
             active_model = model_full if model_full is not None else model_reduced
-            model_type_str = "Desktop (Full Model - 38 features)"
+            model_type_str = "Desktop (Full Model)"
             model_code = "full"
             r2_val = "54.67%"
             features_cnt = 38 if model_full is not None else 20
+            orig_features_cnt = 26 if model_full is not None else 17
             device_str = "Desktop Device"
 
         target_features = list(active_model.feature_names_in_)
@@ -229,6 +231,7 @@ def predict(request):
             'model_type': model_type_str,
             'model_code': model_code,
             'features_count': features_cnt,
+            'orig_features_count': orig_features_cnt,
             'r2_score': r2_val,
             'equation_general': eq_general,
             'equation_substituted': f"{eq_substituted} = {prediction:.2f} mg/dL"

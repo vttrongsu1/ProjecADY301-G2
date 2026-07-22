@@ -753,7 +753,7 @@
                     document.getElementById('res-device').textContent = result.device_type;
                     document.getElementById('res-model-name').textContent = result.model_type;
                     document.getElementById('res-r2').textContent = result.r2_score;
-                    document.getElementById('res-cnt').textContent = result.features_count + ' features';
+                    document.getElementById('res-cnt').textContent = result.orig_features_count + ' variables (' + result.features_count + ' encoded features)';
                     
                     document.getElementById('eq-gen-box').textContent = result.equation_general;
                     document.getElementById('eq-sub-box').textContent = result.equation_substituted;
